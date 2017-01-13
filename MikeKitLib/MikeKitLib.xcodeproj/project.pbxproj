@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE1DBC6F1E28AB120089413A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1DBC6E1E28AB120089413A /* UIKit.framework */; };
+		AE97CB581E28977600EAFFB8 /* MikeSDKInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AE97CB571E28977600EAFFB8 /* MikeSDKInfo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE97CB511E28977600EAFFB8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AE1DBC6E1E28AB120089413A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AE97CB531E28977600EAFFB8 /* libMikeKitLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMikeKitLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE97CB571E28977600EAFFB8 /* MikeSDKInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MikeSDKInfo.m; sourceTree = "<group>"; };
+		AE97CB5F1E2897CF00EAFFB8 /* Lib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lib-Prefix.pch"; sourceTree = "<group>"; };
+		AE97CB611E28981400EAFFB8 /* MikeSDKInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MikeSDKInfo.h; sourceTree = "<group>"; };
+		AE97CB621E28984A00EAFFB8 /* SDKConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKConstants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE97CB501E28977600EAFFB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1DBC6F1E28AB120089413A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE1DBC6D1E28AB120089413A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE1DBC6E1E28AB120089413A /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE97CB4A1E28977600EAFFB8 = {
+			isa = PBXGroup;
+			children = (
+				AE97CB551E28977600EAFFB8 /* MikeKitLib */,
+				AE97CB541E28977600EAFFB8 /* Products */,
+				AE1DBC6D1E28AB120089413A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE97CB541E28977600EAFFB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE97CB531E28977600EAFFB8 /* libMikeKitLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE97CB551E28977600EAFFB8 /* MikeKitLib */ = {
+			isa = PBXGroup;
+			children = (
+				AE97CB5F1E2897CF00EAFFB8 /* Lib-Prefix.pch */,
+				AE97CB601E2897EE00EAFFB8 /* Public */,
+				AE97CB571E28977600EAFFB8 /* MikeSDKInfo.m */,
+			);
+			path = MikeKitLib;
+			sourceTree = "<group>";
+		};
+		AE97CB601E2897EE00EAFFB8 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				AE97CB611E28981400EAFFB8 /* MikeSDKInfo.h */,
+				AE97CB621E28984A00EAFFB8 /* SDKConstants.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE97CB521E28977600EAFFB8 /* MikeKitLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE97CB5C1E28977600EAFFB8 /* Build configuration list for PBXNativeTarget "MikeKitLib" */;
+			buildPhases = (
+				AE97CB4F1E28977600EAFFB8 /* Sources */,
+				AE97CB501E28977600EAFFB8 /* Frameworks */,
+				AE97CB511E28977600EAFFB8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MikeKitLib;
+			productName = MikeKitLib;
+			productReference = AE97CB531E28977600EAFFB8 /* libMikeKitLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE97CB4B1E28977600EAFFB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "上海方创金融信息服务股份有限公司";
+				TargetAttributes = {
+					AE97CB521E28977600EAFFB8 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = AWA9R9FXT6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AE97CB4E1E28977600EAFFB8 /* Build configuration list for PBXProject "MikeKitLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AE97CB4A1E28977600EAFFB8;
+			productRefGroup = AE97CB541E28977600EAFFB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE97CB521E28977600EAFFB8 /* MikeKitLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE97CB4F1E28977600EAFFB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE97CB581E28977600EAFFB8 /* MikeSDKInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AE97CB5A1E28977600EAFFB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AE97CB5B1E28977600EAFFB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE97CB5D1E28977600EAFFB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = AWA9R9FXT6;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AE97CB5E1E28977600EAFFB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = AWA9R9FXT6;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE97CB4E1E28977600EAFFB8 /* Build configuration list for PBXProject "MikeKitLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE97CB5A1E28977600EAFFB8 /* Debug */,
+				AE97CB5B1E28977600EAFFB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE97CB5C1E28977600EAFFB8 /* Build configuration list for PBXNativeTarget "MikeKitLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE97CB5D1E28977600EAFFB8 /* Debug */,
+				AE97CB5E1E28977600EAFFB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE97CB4B1E28977600EAFFB8 /* Project object */;
+}
