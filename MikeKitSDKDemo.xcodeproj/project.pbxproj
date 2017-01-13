@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE1DBC821E28AE6E0089413A /* MikeKitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1DBC811E28AE5C0089413A /* MikeKitFramework.framework */; };
 		AE97CB8E1E2899D000EAFFB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE97CB8D1E2899D000EAFFB8 /* main.m */; };
 		AE97CB911E2899D000EAFFB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE97CB901E2899D000EAFFB8 /* AppDelegate.m */; };
 		AE97CB941E2899D000EAFFB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE97CB931E2899D000EAFFB8 /* ViewController.m */; };
 		AE97CB971E2899D000EAFFB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE97CB951E2899D000EAFFB8 /* Main.storyboard */; };
 		AE97CB991E2899D000EAFFB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE97CB981E2899D000EAFFB8 /* Assets.xcassets */; };
 		AE97CB9C1E2899D000EAFFB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE97CB9A1E2899D000EAFFB8 /* LaunchScreen.storyboard */; };
-		AE97CBDC1E289EB800EAFFB8 /* MikeKitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE97CBA81E2899FE00EAFFB8 /* MikeKitFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AE97CBA71E2899FE00EAFFB8 /* PBXContainerItemProxy */ = {
+		AE1DBC801E28AE5C0089413A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AE97CBA31E2899FE00EAFFB8 /* MikeKitFramework.xcodeproj */;
+			containerPortal = AE1DBC7C1E28AE5C0089413A /* MikeKitFramework.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = AE97CB6D1E2898F900EAFFB8;
 			remoteInfo = MikeKitFramework;
@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE1DBC7C1E28AE5C0089413A /* MikeKitFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MikeKitFramework.xcodeproj; path = MikeKitFramework/MikeKitFramework.xcodeproj; sourceTree = "<group>"; };
 		AE97CB891E2899D000EAFFB8 /* MikeKitSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MikeKitSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE97CB8D1E2899D000EAFFB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE97CB8F1E2899D000EAFFB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,7 +45,6 @@
 		AE97CB981E2899D000EAFFB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE97CB9B1E2899D000EAFFB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE97CB9D1E2899D000EAFFB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE97CBA31E2899FE00EAFFB8 /* MikeKitFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MikeKitFramework.xcodeproj; path = ../MikeKitFramework/MikeKitFramework.xcodeproj; sourceTree = "<group>"; };
 		AE97CBD31E289B4500EAFFB8 /* MikeKitLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MikeKitLib.xcodeproj; path = MikeKitLib/MikeKitLib.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,18 +53,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE97CBDC1E289EB800EAFFB8 /* MikeKitFramework.framework in Frameworks */,
+				AE1DBC821E28AE6E0089413A /* MikeKitFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE1DBC7D1E28AE5C0089413A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE1DBC811E28AE5C0089413A /* MikeKitFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		AE97CB801E2899D000EAFFB8 = {
 			isa = PBXGroup;
 			children = (
+				AE1DBC7C1E28AE5C0089413A /* MikeKitFramework.xcodeproj */,
 				AE97CBD31E289B4500EAFFB8 /* MikeKitLib.xcodeproj */,
-				AE97CBA31E2899FE00EAFFB8 /* MikeKitFramework.xcodeproj */,
 				AE97CB8B1E2899D000EAFFB8 /* MikeKitSDKDemo */,
 				AE97CB8A1E2899D000EAFFB8 /* Products */,
 			);
@@ -100,14 +108,6 @@
 				AE97CB8D1E2899D000EAFFB8 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AE97CBA41E2899FE00EAFFB8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AE97CBA81E2899FE00EAFFB8 /* MikeKitFramework.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		AE97CBD41E289B4500EAFFB8 /* Products */ = {
@@ -167,8 +167,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = AE97CBA41E2899FE00EAFFB8 /* Products */;
-					ProjectRef = AE97CBA31E2899FE00EAFFB8 /* MikeKitFramework.xcodeproj */;
+					ProductGroup = AE1DBC7D1E28AE5C0089413A /* Products */;
+					ProjectRef = AE1DBC7C1E28AE5C0089413A /* MikeKitFramework.xcodeproj */;
 				},
 				{
 					ProductGroup = AE97CBD41E289B4500EAFFB8 /* Products */;
@@ -183,11 +183,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		AE97CBA81E2899FE00EAFFB8 /* MikeKitFramework.framework */ = {
+		AE1DBC811E28AE5C0089413A /* MikeKitFramework.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = MikeKitFramework.framework;
-			remoteRef = AE97CBA71E2899FE00EAFFB8 /* PBXContainerItemProxy */;
+			remoteRef = AE1DBC801E28AE5C0089413A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		AE97CBD81E289B4500EAFFB8 /* libMikeKitLib.a */ = {
