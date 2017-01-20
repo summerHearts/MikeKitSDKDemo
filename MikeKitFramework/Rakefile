@@ -8,7 +8,7 @@ puts "\nAction - MikeKitFramework rake build"
 outputFile = ENV['SDK_FRAMEWORK_STRUCT_DIR']
 
 if !outputFile
-  outputFile = "../build/MikeKit.framework/"
+  outputFile = "../build/MikeKitFramework.framework/"
   puts "WARN - Running rake with no build dependency."
 end
 
@@ -44,8 +44,8 @@ end
 
 desc "Build fat"
 task :build_fat => [:build_arm] do
-  sh "lipo -create ./build-arm/MikeKit.framework/MikeKitFramework -output ./build-arm/MikeKit.framework/MikeKitFramework"
-  sh "mv ./build-arm/MikeKit.framework \"$(dirname #{outputFile})\""
+  sh "lipo -create ./build-arm/MikeKitFramework.framework/MikeKitFramework -output ./build-arm/MikeKitFramework.framework/MikeKitFramework"
+  sh "mv ./build-arm/MikeKitFramework.framework \"$(dirname #{outputFile})\""
 end
 
 desc "Clean"
