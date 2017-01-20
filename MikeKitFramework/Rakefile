@@ -1,0 +1,68 @@
+
+##########################
+# Rake for build frameowrk structure. Will dist to RootDir/build/sdkSample.framework
+##########################
+
+puts "\nAction - MikeKitFramework rake build"
+
+outputFile = ENV['SDK_FRAMEWORK_STRUCT_DIR']
+
+if !outputFile
+  outputFile = "../build/MikeKit.framework/"
+  puts "WARN - Running rake with no build dependency."
+end
+
+puts "Will put dist file into - '#{outputFile}'"
+
+
+$config = "Release"
+def xcodebuild(sdk, archs, iphoneos_deployment_target, products_dir)
+  puts $config
+  config = $config
+  sh "xcodebuild -project 'MikeKitFramework.xcodeproj' -target MikeKitFramework -configuration '#{config}' -sdk '#{sdk}' clean build ARCHS='#{archs}' VALID_ARCHS='#{archs}' IPHONEOS_DEPLOYMENT_TARGET='#{iphoneos_deployment_target}' TARGET_BUILD_DIR='#{products_dir}' BUILT_PRODUCTS_DIR='#{products_dir}' "
+end
+
+desc "Build arm"
+task :build_arm do
+  xcodebuild('iphoneos', 'armv7 armv7s', '7.0', 'build-arm')
+end
+
+desc "Build arm64"
+task :build_arm64 do
+  xcodebuild('iphoneos', 'arm64', '7.0', 'build-arm64')
+end
+
+desc "Build i386"
+task :build_i386 do
+  xcodebuild('iphonesimulator', 'i386', '7.0', 'build-i386')
+end
+
+desc "Build x86_64"
+task :build_x86_64 do
+  xcodebuild('iphonesimulator', 'x86_64', '7.0', 'build-x86_64')
+end
+
+desc "Build fat"
+task :build_fat => [:build_arm] do
+  sh "lipo -create ./build-arm/MikeKit.framework/MikeKitFramework -output ./build-arm/MikeKit.framework/MikeKitFramework"
+  sh "mv ./build-arm/MikeKit.framework \"$(dirname #{outputFile})\""
+end
+
+desc "Clean"
+task :clean do
+  Dir["build-*"].each{ |x|
+    `rm -r '#{x}'`
+  }
+end
+
+desc "Clean binary"
+task :distclean => [:clean] do
+  Dir["build/*.a"].each{ |x|
+    `rm -r '#{x}`
+  }
+end
+
+task :debug => [:distclean, :debug_fat]
+
+task :default => [:distclean, :build_fat, :distclean]
+

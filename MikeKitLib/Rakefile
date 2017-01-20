@@ -1,0 +1,73 @@
+
+##########################
+# Rake for build sdkSample lib .a. Will dist to SDK_LIB_FILE
+##########################
+
+
+puts "\nAction - MikeKitLib rake build"
+
+outputFile = ENV['SDK_LIB_FILE']
+if !outputFile
+  outputFile = "../build/MikeKit.a" 
+  puts "WARN - Running rake with no build dependency."
+end
+
+puts "Will put dist file into - '#{outputFile}'"
+
+## No need "Debug" mode
+$config = "Release"
+
+def xcodebuild(sdk, archs, iphoneos_deployment_target, products_dir, bitcodeEnable)
+  puts $config
+  config = $config
+if bitcodeEnable
+  sh "xcodebuild -project 'MikeKitLib.xcodeproj' -target MikeKitLib -configuration '#{config}' -sdk '#{sdk}' clean build ARCHS='#{archs}' VALID_ARCHS='#{archs}' IPHONEOS_DEPLOYMENT_TARGET='#{iphoneos_deployment_target}'  TARGET_BUILD_DIR='#{products_dir}' BUILT_PRODUCTS_DIR='#{products_dir}' OTHER_CFLAGS='-fembed-bitcode' | egrep -A 5 \"(error|warning):\"    "
+else 
+  sh "xcodebuild -project 'MikeKitLib.xcodeproj' -target MikeKitLib -configuration '#{config}' -sdk '#{sdk}'  ARCHS='#{archs}' VALID_ARCHS='#{archs}' IPHONEOS_DEPLOYMENT_TARGET='#{iphoneos_deployment_target}'  TARGET_BUILD_DIR='#{products_dir}' BUILT_PRODUCTS_DIR='#{products_dir}' clean build  "
+end
+end
+
+desc "Build arm"
+task :build_arm do
+  xcodebuild('iphoneos', 'armv7 armv7s', '7.0', 'build-arm', true)
+end
+
+desc "Build arm64"
+task :build_arm64 do
+  xcodebuild('iphoneos', 'arm64', '7.0', 'build-arm64', true)
+end
+
+desc "Build i386"
+task :build_i386 do
+  xcodebuild('iphonesimulator', 'i386', '7.0', 'build-i386', false)
+end
+
+desc "Build x86_64"
+task :build_x86_64 do
+  xcodebuild('iphonesimulator', 'x86_64', '7.0', 'build-x86_64', false)
+end
+
+desc "Build fat"
+task :build_fat => [:build_arm, :build_arm64, :build_i386, :build_x86_64] do
+  sh "lipo -create ./build-arm/libLib.a ./build-arm64/libLib.a  ./build-i386/libLib.a ./build-x86_64/libLib.a -output '#{outputFile}'"
+end
+
+desc "Clean"
+task :clean do
+  Dir["build-*"].each{ |x| 
+    `rm -r '#{x}'`
+  }    
+end
+
+desc "Clean binary"
+task :distclean => [:clean] do
+  Dir["build/*.a"].each{ |x| 
+    `rm -r '#{x}'`
+  }
+end
+
+
+task :debug => [:distclean, :debug_fat]
+
+task :default => [:distclean, :build_fat, :distclean]
+
