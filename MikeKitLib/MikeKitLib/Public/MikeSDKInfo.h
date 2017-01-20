@@ -13,7 +13,7 @@
 
 /*! SDK 构建ID 每次构建都会增加 */
 
-#define SDK_BUILD  1000
+1 1000
 
 @interface MikeSDKInfo : NSObject
 /**

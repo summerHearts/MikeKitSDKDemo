@@ -7,15 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MikeKitFramework/SDKConstants.h>
 
 /*! SDK版本号，用于展示  SDK 的版本信息 */
 #define SDK_VERSION @"1.0.0"
 
 /*! SDK 构建ID 每次构建都会增加 */
 
-#define SDK_BUILD  1000
-@interface MikeSDKInfo : NSObject
+1 1000
 
+@interface MikeSDKInfo : NSObject
 /**
  *  DocumentDirectory
  *
@@ -36,4 +37,5 @@
  *  @return CacheDirectory目录
  */
 + (NSString *)getCacheDirectory;
+
 @end
