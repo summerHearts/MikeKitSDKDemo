@@ -9,5 +9,7 @@
 #ifndef SDKConstants_h
 #define SDKConstants_h
 
+#improt "SMKUserInfo.h"
+#improt "SMKUser.h"
 
 #endif /* SDKConstants_h */

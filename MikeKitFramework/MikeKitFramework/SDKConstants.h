@@ -11,5 +11,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "SMKUserInfo.h"
+#import "SMKUser.h"
+
 
 #endif /* SDKConstants_h */

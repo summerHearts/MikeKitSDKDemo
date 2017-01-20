@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import <MikeKitFramework/MikeSDKInfo.h>
-
+#import <MikeKitFramework/SDKConstants.h>
 @interface ViewController ()
 
 @end
@@ -20,7 +20,10 @@
     NSLog(@"%@", [MikeSDKInfo getDocumentDirectory]);
 //    NSLog(@"%@", [MikeSDKInfo getCacheDirectory]);
     NSLog(@"%@", [MikeSDKInfo getLibraryDirectory]);
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    SMKUserInfo *userInfo = [SMKUserInfo getUseInfoByUser:nil];
+    NSLog(@">>>  name is %@",userInfo.name);
+    
 }
 
 

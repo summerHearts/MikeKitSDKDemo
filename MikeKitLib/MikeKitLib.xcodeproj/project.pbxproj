@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AE1DBC6F1E28AB120089413A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1DBC6E1E28AB120089413A /* UIKit.framework */; };
 		AE97CB581E28977600EAFFB8 /* MikeSDKInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AE97CB571E28977600EAFFB8 /* MikeSDKInfo.m */; };
+		AED218FE1E324EB4009A1321 /* SMKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = AED218FD1E324EB4009A1321 /* SMKUser.m */; };
+		AED219081E324FA3009A1321 /* SMKUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AED219071E324FA3009A1321 /* SMKUserInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +32,10 @@
 		AE97CB5F1E2897CF00EAFFB8 /* Lib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lib-Prefix.pch"; sourceTree = "<group>"; };
 		AE97CB611E28981400EAFFB8 /* MikeSDKInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MikeSDKInfo.h; sourceTree = "<group>"; };
 		AE97CB621E28984A00EAFFB8 /* SDKConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKConstants.h; sourceTree = "<group>"; };
+		AED218FC1E324EAE009A1321 /* SMKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMKUser.h; sourceTree = "<group>"; };
+		AED218FD1E324EB4009A1321 /* SMKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMKUser.m; sourceTree = "<group>"; };
+		AED219041E324F8C009A1321 /* SMKUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMKUserInfo.h; sourceTree = "<group>"; };
+		AED219071E324FA3009A1321 /* SMKUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMKUserInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,8 @@
 				AE97CB5F1E2897CF00EAFFB8 /* Lib-Prefix.pch */,
 				AE97CB601E2897EE00EAFFB8 /* Public */,
 				AE97CB571E28977600EAFFB8 /* MikeSDKInfo.m */,
+				AED218FD1E324EB4009A1321 /* SMKUser.m */,
+				AED219071E324FA3009A1321 /* SMKUserInfo.m */,
 			);
 			path = MikeKitLib;
 			sourceTree = "<group>";
@@ -83,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				AE97CB611E28981400EAFFB8 /* MikeSDKInfo.h */,
+				AED218FC1E324EAE009A1321 /* SMKUser.h */,
+				AED219041E324F8C009A1321 /* SMKUserInfo.h */,
 				AE97CB621E28984A00EAFFB8 /* SDKConstants.h */,
 			);
 			path = Public;
@@ -146,7 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AED218FE1E324EB4009A1321 /* SMKUser.m in Sources */,
 				AE97CB581E28977600EAFFB8 /* MikeSDKInfo.m in Sources */,
+				AED219081E324FA3009A1321 /* SMKUserInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,8 @@
 		AE97CB7E1E28997100EAFFB8 /* MikeSDKInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = AE97CB7C1E28997100EAFFB8 /* MikeSDKInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE97CB7F1E28997100EAFFB8 /* SDKConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = AE97CB7D1E28997100EAFFB8 /* SDKConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE97CBDB1E289E9A00EAFFB8 /* libMikeKitLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE97CBDA1E289E9A00EAFFB8 /* libMikeKitLib.a */; };
+		AED2190F1E3256A7009A1321 /* SMKUser.h in Headers */ = {isa = PBXBuildFile; fileRef = AED2190D1E3256A7009A1321 /* SMKUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AED219101E3256A7009A1321 /* SMKUserInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = AED2190E1E3256A7009A1321 /* SMKUserInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		AE97CB7C1E28997100EAFFB8 /* MikeSDKInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MikeSDKInfo.h; sourceTree = "<group>"; };
 		AE97CB7D1E28997100EAFFB8 /* SDKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKConstants.h; sourceTree = "<group>"; };
 		AE97CBDA1E289E9A00EAFFB8 /* libMikeKitLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMikeKitLib.a; path = "../MikeKitSDKDemo/MikeKitLib/build/Debug-iphoneos/libMikeKitLib.a"; sourceTree = "<group>"; };
+		AED2190D1E3256A7009A1321 /* SMKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMKUser.h; sourceTree = "<group>"; };
+		AED2190E1E3256A7009A1321 /* SMKUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMKUserInfo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				AE97CB7C1E28997100EAFFB8 /* MikeSDKInfo.h */,
 				AE97CB7D1E28997100EAFFB8 /* SDKConstants.h */,
+				AED2190D1E3256A7009A1321 /* SMKUser.h */,
+				AED2190E1E3256A7009A1321 /* SMKUserInfo.h */,
 				AE1DBC6B1E28A9CE0089413A /* Info.plist */,
 			);
 			path = MikeKitFramework;
@@ -80,6 +86,8 @@
 			files = (
 				AE97CB7E1E28997100EAFFB8 /* MikeSDKInfo.h in Headers */,
 				AE97CB7F1E28997100EAFFB8 /* SDKConstants.h in Headers */,
+				AED2190F1E3256A7009A1321 /* SMKUser.h in Headers */,
+				AED219101E3256A7009A1321 /* SMKUserInfo.h in Headers */,
 				AE97CB7B1E28994800EAFFB8 /* MikeKitFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
